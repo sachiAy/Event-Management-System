@@ -1,0 +1,90 @@
+<?php
+	require 'dbconfig/config.php';
+
+	//Unauthorized Access Check
+    session_start();
+    if(!isset($_SESSION['usertype']) || $_SESSION['usertype'] != 'a'){
+       header('Location:login.php');
+       exit();
+       }
+
+?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		
+		<style>
+			.button {
+    background-color: blue; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+		
+		
+		
+		
+		</style>
+	</head>
+		<body background="./img/bc.jpg">
+			<center>
+				<h1>Our Photographers</h1>
+				<table cellpadding="12">
+					<tr>
+						<td><a href="homeadmin.php"><button class="button" id="deletePhotographer">HOME</button></a></td>
+						<td><a href="aboutus.php"><input type="button" class="button" value="ABOUT"/></a><br></td>
+						<td><a href="photographers_add.php"><button class="button" id="deletePhotographer">ADD</button></a></td>
+						<td><a href="photographers_update.php"><button class="button" id="updatePhotographer">UPDATE</button></td>
+						<td><a href="photographers_admin.php"><button class="button" id="updatePhotographer">VIEW</button></td>
+						<td><a href="photographers_delete.php"><button class='button' id='deletePhotographer'>DELETE</button></td>	
+						<td><a href="logout.php"><button class="button" id="deletePhotographer">LOG OUT</button></a></td>
+					</tr>
+					<table cellpadding="30">
+					
+					
+					
+					 <?php
+
+						$retrieve = "SELECT * FROM photographers;";
+
+						//Selecting all data from Table     
+						$result = mysqli_query($con,$retrieve);//Passing SQL
+
+						while($row = mysqli_fetch_assoc($result)){
+
+							echo "
+							
+							<tr>
+								<td><img src=\"img/{$row['imglink']}\" height=\"300px\"\ width=\"300px\"\"></td>
+								<td>
+									<b><h3>".$row['p_id']."</h3></b>
+									<b><h3>".$row['p_name']."</h3></b>
+									<b><h3>".$row['con_num']."</h3></b>
+									<b><h3>".$row['email']."</h3></b>
+								</td>	
+
+
+							</tr>
+							
+							";
+
+						}	
+
+
+					?>     
+					
+
+						
+					</table>
+					
+					
+				</table>	
+			</center>
+		<body>
+</html>

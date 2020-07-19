@@ -1,0 +1,193 @@
+
+#login-box{
+	width:500px;
+	margin: 0 auto;
+	background:#8E8CD8;
+	padding:5px;
+	border:5px solid #2c3e50;
+	border-radius:10px;
+}
+
+.img1{
+	width:150px;
+	text-align:left;
+	border-radius:50%; 
+}
+.img2{
+	width:150px;
+	text-align:right;
+	border-radius:50%; 
+}
+.img5{
+	width:300px;
+	height: 60px;
+	text-align:center;
+	border-radius:30%; 
+}
+
+.loginform{
+	width:450px;
+	margin:0 auto;
+	
+}
+.registationform{
+	width:450px;
+	margin:0 auto;
+}
+.inputvalues{
+	width:430px;
+	margin:0 auto;
+	padding:5px;
+}
+.inputvalues1{
+	width:100px;
+	margin:0 auto;
+	padding:5px;
+}
+#login_btn{
+	margin-top:10px;
+	background-color:#27ae60;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+#homelogin{
+	margin-top:10px;
+	background-color:#11788F;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+#out_btn{
+	margin-top:10px;
+	margin-left:25%;
+	background-color:red;
+	padding:5px;
+	color:white;
+	width:50%;
+	text-align:center;
+	font-size:200%;
+	font-weight:bold;
+}
+/*#log_btn{
+	margin-top:10px;
+	margin-left:25%;
+	background-color:black;
+	padding:5px;
+	color:red;
+	width:0;
+	text-align:center;
+	font-size:200%;
+	font-weight:bold;
+}*/
+
+#register_btn{
+	margin-top:10px;
+	margin-bottom:20px;
+	background-color:#0063B1;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+#signup_btn{
+	margin-top:10px;
+	background-color:#27ae60;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+#back_btn{
+	margin-top:10px;
+	background-color:#e74c3c;
+	padding:5px;
+	color:white;
+	width:40%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+#logout_btn{
+	margin-top:50px;
+	background-color:#498205;
+	padding:5px;
+	color:white;
+	width:40%;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+#view_btn{
+	margin-left:20px;
+	background-color:#0423E7;
+	padding:5px;
+	color:white;
+	width:100px;
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+}
+#book_btn{
+	margin-left:50px;
+	background-color:#E75304;
+	padding:5px;
+	color:white;
+	width:100px;
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+}
+.container{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.fontcon{
+	position: relative;
+	text-align: left;
+	color: white;
+}
+.centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.table{
+	padding: 15px;
+}
+.font{
+	color:#000000;
+	font-size:10px;
+	text-align: center;
+	
+}
+.ft1{
+	color:black;
+	font-size:30px;
+	text-align: center;
+	
+	
+}
+/*.button {
+    background-color: green; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}*/
